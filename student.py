@@ -15,8 +15,10 @@ from fastapi.responses import JSONResponse
 class CommandLogger(monitoring.CommandListener):
     """ log mongo db """
     def started(self, event):
-        logging.info("Command {0.command_name} **Query** {0.command}".format(event))
-
+        logging.info("Command ST {0.command_name} **Details** {0.command} ".format(event))
+    def succeeded(self, event):
+    	pass 
+    	
 class Student():
 
 	def __init__(self):

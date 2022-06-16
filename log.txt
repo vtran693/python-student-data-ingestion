@@ -1,0 +1,10 @@
+20:31:33,908 root INFO Logging Student mongodb queries
+20:31:33,911 uvicorn.error INFO Started server process [186979]
+20:31:33,912 uvicorn.error INFO Waiting for application startup.
+20:31:33,912 uvicorn.error INFO Application startup complete.
+20:31:38,108 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 3005}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
+20:31:38,114 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 3005}), ('projection', {'_id': 0}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
+20:31:38,117 root INFO Command ST find **Details** SON([('find', 'students_grade'), ('filter', {'student_id': 3005}), ('projection', {'_id': 0}), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
+20:32:30,806 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 4000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
+20:32:30,809 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 4000}), ('projection', {'_id': 0}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
+20:32:30,812 root INFO Command ST find **Details** SON([('find', 'students_grade'), ('filter', {'student_id': 4000}), ('projection', {'_id': 0}), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
