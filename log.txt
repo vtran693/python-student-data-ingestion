@@ -1,26 +1,50 @@
-20:38:13,373 uvicorn.error INFO Shutting down
-20:38:13,473 uvicorn.error INFO Waiting for application shutdown.
-20:38:13,474 uvicorn.error INFO Application shutdown complete.
-20:38:13,474 uvicorn.error INFO Finished server process [187299]
-20:38:14,239 root INFO Logging Student mongodb queries
-20:38:14,242 uvicorn.error INFO Started server process [187326]
-20:38:14,243 uvicorn.error INFO Waiting for application startup.
-20:38:14,243 uvicorn.error INFO Application startup complete.
-20:38:15,801 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 4000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'*\xc1]V\xbf\xdd@\xc9\x8e\x8b_\x16\xb1\xb8\x85\xad', 4)}), ('$db', 'students_transfer')]) 
-20:38:15,807 root INFO Failed command aggregate id 1957747793 completed in 5799 microseconds
-20:38:15,807 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 4000}), ('projection', {'_id': 0}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'*\xc1]V\xbf\xdd@\xc9\x8e\x8b_\x16\xb1\xb8\x85\xad', 4)}), ('$db', 'students_transfer')]) 
-20:38:15,812 root INFO Failed command find id 424238335 completed in 4028 microseconds
-20:38:15,812 root INFO Command ST find **Details** SON([('find', 'students_grade'), ('filter', {'student_id': 4000}), ('projection', {'_id': 0}), ('lsid', {'id': Binary(b'*\xc1]V\xbf\xdd@\xc9\x8e\x8b_\x16\xb1\xb8\x85\xad', 4)}), ('$db', 'students_transfer')]) 
-20:38:15,825 root INFO Failed command find id 719885386 completed in 13005 microseconds
-20:39:03,121 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 8000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'*\xc1]V\xbf\xdd@\xc9\x8e\x8b_\x16\xb1\xb8\x85\xad', 4)}), ('$db', 'students_transfer')]) 
-20:39:03,125 root INFO Failed command aggregate id 1350490027 completed in 4140 microseconds
-20:39:37,208 uvicorn.error INFO Shutting down
-20:39:37,309 uvicorn.error INFO Waiting for application shutdown.
-20:39:37,309 uvicorn.error INFO Application shutdown complete.
-20:39:37,309 uvicorn.error INFO Finished server process [187326]
-20:39:37,800 root INFO Logging Student mongodb queries
-20:39:37,803 uvicorn.error INFO Started server process [187375]
-20:39:37,803 uvicorn.error INFO Waiting for application startup.
-20:39:37,804 uvicorn.error INFO Application startup complete.
-20:39:43,265 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 8000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'xdC\x91\xd2\x93@C\xb7\x16C2\xae\xc5q*', 4)}), ('$db', 'students_transfer')]) 
-20:39:43,271 root INFO Succeded command aggregate id 1957747793 completed in 6082 microseconds
+20:52:22,985 uvicorn.error INFO Finished server process [187778]
+20:52:30,702 root INFO Logging Student mongodb queries
+20:52:30,705 uvicorn.error INFO Started server process [187875]
+20:52:30,705 uvicorn.error INFO Waiting for application startup.
+20:52:30,705 uvicorn.error INFO Application startup complete.
+20:52:32,11 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'first_name': 'Mike_107', 'last_name': 'Vu_110', 'dob': '02/05/02'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:32,15 root INFO Succeded command aggregate id 1957747793 completed in 3409 microseconds
+20:52:32,16 root INFO Student ('Mike_107', 'Vu_110') already exists. No import.
+20:52:33,787 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'first_name': 'Mike_133', 'last_name': 'Vu_115', 'dob': '02/05/02'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,793 root INFO Succeded command aggregate id 424238335 completed in 5180 microseconds
+20:52:33,794 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,796 root INFO Succeded command aggregate id 719885386 completed in 2320 microseconds
+20:52:33,797 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {}), ('sort', SON([('student_id', -1)])), ('projection', {'student_id': 1}), ('limit', 1), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,798 root INFO Succeded command find id 1649760492 completed in 1671 microseconds
+20:52:33,799 root INFO Command ST insert **Details** SON([('insert', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'first_name': 'Mike_133', 'last_name': 'Vu_115', 'dob': '02/05/02', 'student_id': 4865, 'phone_number': '703-333-3333', 'school_name': 'Vcu', 'transfer_date': '09/01/22', '_id': ObjectId('62aa7ed1d242115662bedbc9')}])]) 
+20:52:33,799 root INFO Succeded command insert id 596516649 completed in 197 microseconds
+20:52:33,799 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'Biol 101', 'term': 'Spring 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,810 root INFO Succeded command aggregate id 1189641421 completed in 10364 microseconds
+20:52:33,810 root INFO Command ST insert **Details** SON([('insert', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'class': 'Biol 101', 'grade': 'A', 'term': 'Spring 2021', 'date': '03/15/21', 'student_id': 4865, '_id': ObjectId('62aa7ed1d242115662bedbca')}])]) 
+20:52:33,810 root INFO Succeded command insert id 1025202362 completed in 347 microseconds
+20:52:33,811 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'Chem 101', 'term': 'Spring 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,821 root INFO Succeded command aggregate id 1350490027 completed in 10404 microseconds
+20:52:33,821 root INFO Command ST insert **Details** SON([('insert', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'class': 'Chem 101', 'grade': 'A', 'term': 'Spring 2021', 'date': '03/15/21', 'student_id': 4865, '_id': ObjectId('62aa7ed1d242115662bedbcb')}])]) 
+20:52:33,822 root INFO Succeded command insert id 783368690 completed in 195 microseconds
+20:52:33,822 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'Hist 105', 'term': 'Spring 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,833 root INFO Succeded command aggregate id 1102520059 completed in 11156 microseconds
+20:52:33,833 root INFO Command ST insert **Details** SON([('insert', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'class': 'Hist 105', 'grade': 'B', 'term': 'Spring 2021', 'date': '03/15/21', 'student_id': 4865, '_id': ObjectId('62aa7ed1d242115662bedbcc')}])]) 
+20:52:33,834 root INFO Succeded command insert id 2044897763 completed in 213 microseconds
+20:52:33,834 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'Geol 101', 'term': 'Spring 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,845 root INFO Succeded command aggregate id 1967513926 completed in 11240 microseconds
+20:52:33,846 root INFO Command ST insert **Details** SON([('insert', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'class': 'Geol 101', 'grade': 'B', 'term': 'Spring 2021', 'date': '03/15/21', 'student_id': 4865, '_id': ObjectId('62aa7ed1d242115662bedbcd')}])]) 
+20:52:33,846 root INFO Succeded command insert id 1365180540 completed in 203 microseconds
+20:52:33,846 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'Biol 102', 'term': 'Fall 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,855 root INFO Succeded command aggregate id 1540383426 completed in 9360 microseconds
+20:52:33,856 root INFO Command ST insert **Details** SON([('insert', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'class': 'Biol 102', 'grade': 'A', 'term': 'Fall 2021', 'date': '07/15/21', 'student_id': 4865, '_id': ObjectId('62aa7ed1d242115662bedbce')}])]) 
+20:52:33,856 root INFO Succeded command insert id 304089172 completed in 174 microseconds
+20:52:33,856 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'Chem 102', 'term': 'Fall 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,867 root INFO Succeded command aggregate id 1303455736 completed in 11315 microseconds
+20:52:33,868 root INFO Command ST insert **Details** SON([('insert', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'class': 'Chem 102', 'grade': 'A', 'term': 'Fall 2021', 'date': '07/15/21', 'student_id': 4865, '_id': ObjectId('62aa7ed1d242115662bedbcf')}])]) 
+20:52:33,868 root INFO Succeded command insert id 35005211 completed in 195 microseconds
+20:52:33,868 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'CS 211', 'term': 'Fall 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,880 root INFO Succeded command aggregate id 521595368 completed in 12060 microseconds
+20:52:33,881 root INFO Command ST insert **Details** SON([('insert', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'class': 'CS 211', 'grade': 'A', 'term': 'Fall 2021', 'date': '07/15/21', 'student_id': 4865, '_id': ObjectId('62aa7ed1d242115662bedbd0')}])]) 
+20:52:33,882 root INFO Succeded command insert id 294702567 completed in 299 microseconds
+20:52:33,882 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'IT 101', 'term': 'Fall 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,893 root INFO Succeded command aggregate id 1726956429 completed in 10468 microseconds
+20:52:33,893 root INFO Command ST insert **Details** SON([('insert', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer'), ('documents', [{'class': 'IT 101', 'grade': 'A', 'term': 'Fall 2021', 'date': '07/15/21', 'student_id': 4865, '_id': ObjectId('62aa7ed1d242115662bedbd1')}])]) 
+20:52:33,894 root INFO Succeded command insert id 336465782 completed in 657 microseconds
+20:52:33,895 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'Chem 101', 'term': 'Spring 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
+20:52:33,904 root INFO Succeded command aggregate id 861021530 completed in 9590 microseconds

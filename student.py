@@ -91,7 +91,9 @@ class Student():
 
 			# check if student exists
 			if (student_exist_by_name_dob(self.first_name, self.last_name, self.dob) > 0):
-				return (f"Student {self.first_name, self.last_name} already exists. No import.")
+				error_msg = f"Student {self.first_name, self.last_name} already exists. No import."
+				logging.info(error_msg)
+				return (error_msg)
 
 			else:				
 				# student_info
@@ -138,9 +140,11 @@ class Student():
 
 		# check for missing info.
 		for key,val in record.items():
-			if (not val and key not in ('classes','transfer_date','phone_number','school_name')):
+			if (not val and key not in ('classes','transfer_date','phone_number','school_name','student_id')):
 				# critical error
-				self.notes.append({0:f"[red flag] Error. '{key}' is required."})
+				error_msg = f"[red flag] Error. '{key}' is required."
+				logging.info(error_msg)
+				self.notes.append({0:error_msg})
 
 			elif (not val):
 				# minor error
@@ -289,6 +293,7 @@ async def view_student_by_id(student_id):
 @app.get("/importcsv")
 def import_student_csv():
 	""" read cvs & load into db """
+
 	transcript_url = "student.csv"
 	record = pd.read_csv(transcript_url, header=None)
 
