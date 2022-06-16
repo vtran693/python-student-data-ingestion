@@ -1,10 +1,26 @@
-20:31:33,908 root INFO Logging Student mongodb queries
-20:31:33,911 uvicorn.error INFO Started server process [186979]
-20:31:33,912 uvicorn.error INFO Waiting for application startup.
-20:31:33,912 uvicorn.error INFO Application startup complete.
-20:31:38,108 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 3005}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
-20:31:38,114 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 3005}), ('projection', {'_id': 0}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
-20:31:38,117 root INFO Command ST find **Details** SON([('find', 'students_grade'), ('filter', {'student_id': 3005}), ('projection', {'_id': 0}), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
-20:32:30,806 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 4000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
-20:32:30,809 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 4000}), ('projection', {'_id': 0}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
-20:32:30,812 root INFO Command ST find **Details** SON([('find', 'students_grade'), ('filter', {'student_id': 4000}), ('projection', {'_id': 0}), ('lsid', {'id': Binary(b'V\xe9G\xfa\xa9%D\xb9\x9b\xc7Ox\xb9\xea^F', 4)}), ('$db', 'students_transfer')]) 
+20:38:13,373 uvicorn.error INFO Shutting down
+20:38:13,473 uvicorn.error INFO Waiting for application shutdown.
+20:38:13,474 uvicorn.error INFO Application shutdown complete.
+20:38:13,474 uvicorn.error INFO Finished server process [187299]
+20:38:14,239 root INFO Logging Student mongodb queries
+20:38:14,242 uvicorn.error INFO Started server process [187326]
+20:38:14,243 uvicorn.error INFO Waiting for application startup.
+20:38:14,243 uvicorn.error INFO Application startup complete.
+20:38:15,801 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 4000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'*\xc1]V\xbf\xdd@\xc9\x8e\x8b_\x16\xb1\xb8\x85\xad', 4)}), ('$db', 'students_transfer')]) 
+20:38:15,807 root INFO Failed command aggregate id 1957747793 completed in 5799 microseconds
+20:38:15,807 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 4000}), ('projection', {'_id': 0}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'*\xc1]V\xbf\xdd@\xc9\x8e\x8b_\x16\xb1\xb8\x85\xad', 4)}), ('$db', 'students_transfer')]) 
+20:38:15,812 root INFO Failed command find id 424238335 completed in 4028 microseconds
+20:38:15,812 root INFO Command ST find **Details** SON([('find', 'students_grade'), ('filter', {'student_id': 4000}), ('projection', {'_id': 0}), ('lsid', {'id': Binary(b'*\xc1]V\xbf\xdd@\xc9\x8e\x8b_\x16\xb1\xb8\x85\xad', 4)}), ('$db', 'students_transfer')]) 
+20:38:15,825 root INFO Failed command find id 719885386 completed in 13005 microseconds
+20:39:03,121 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 8000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'*\xc1]V\xbf\xdd@\xc9\x8e\x8b_\x16\xb1\xb8\x85\xad', 4)}), ('$db', 'students_transfer')]) 
+20:39:03,125 root INFO Failed command aggregate id 1350490027 completed in 4140 microseconds
+20:39:37,208 uvicorn.error INFO Shutting down
+20:39:37,309 uvicorn.error INFO Waiting for application shutdown.
+20:39:37,309 uvicorn.error INFO Application shutdown complete.
+20:39:37,309 uvicorn.error INFO Finished server process [187326]
+20:39:37,800 root INFO Logging Student mongodb queries
+20:39:37,803 uvicorn.error INFO Started server process [187375]
+20:39:37,803 uvicorn.error INFO Waiting for application startup.
+20:39:37,804 uvicorn.error INFO Application startup complete.
+20:39:43,265 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 8000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'xdC\x91\xd2\x93@C\xb7\x16C2\xae\xc5q*', 4)}), ('$db', 'students_transfer')]) 
+20:39:43,271 root INFO Succeded command aggregate id 1957747793 completed in 6082 microseconds
