@@ -3,11 +3,19 @@
 ## (1) transaction_log
 ## (2) API post
 
+
 import pandas as pd 
-import pymongo, random, json, requests
+import pymongo, random, json, requests, logging
+from pymongo import monitoring
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from fastapi.responses import JSONResponse
+
+
+class CommandLogger(monitoring.CommandListener):
+    """ log mongo db """
+    def started(self, event):
+        logging.info("Command {0.command_name} **Query** {0.command}".format(event))
 
 class Student():
 
@@ -184,6 +192,10 @@ response = requests.post(api_url, json=todo)
 print (response.text)
 """
 
+""" start mongodb loggings & save to log.txt """
+logging.basicConfig(filename='log.txt', filemode='a', format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s', datefmt='%H:%M:%S', level=logging.DEBUG)
+logging.info("Logging Student mongodb queries")
+monitoring.register(CommandLogger())
 
 """ mongodb """
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -199,7 +211,7 @@ app = FastAPI()
 @app.get("/",response_class=HTMLResponse)
 async def default():
 	""" default view """
-	return "import: <a href='./importcsv'>csv</a>, <a href='./importapi'>api</a>  | view: <a href='./view'>all</a> <a href='./view_id/1000'>by id</a> | <a href='./remove/1000'>remove</a>"
+	return "import: <a href='./importcsv'>csv</a>, <a href='./importjson'>api</a>  | view: <a href='./view'>all</a> <a href='./view_id/1000'>by id</a> | <a href='./remove/1000'>remove</a>"
 
 @app.get("/edit/")
 def edit_student(rservice,rtype,field_name,new_info):
