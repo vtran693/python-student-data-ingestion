@@ -48,3 +48,1385 @@
 20:52:33,894 root INFO Succeded command insert id 336465782 completed in 657 microseconds
 20:52:33,895 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_grade'), ('pipeline', [{'$match': {'student_id': 4865, 'class': 'Chem 101', 'term': 'Spring 2021'}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'a\xb6\x0c\xd6_+E\xcd\x98\x00!\xb4\x8d\x14_\x13', 4)}), ('$db', 'students_transfer')]) 
 20:52:33,904 root INFO Succeded command aggregate id 861021530 completed in 9590 microseconds
+20:54:44,307 root INFO Logging Student mongodb queries
+20:54:44,310 uvicorn.error INFO Started server process [188048]
+20:54:44,311 uvicorn.error INFO Waiting for application startup.
+20:54:44,311 uvicorn.error INFO Application startup complete.
+20:54:59,761 uvicorn.error INFO Shutting down
+20:54:59,862 uvicorn.error INFO Waiting for application shutdown.
+20:54:59,862 uvicorn.error INFO Application shutdown complete.
+20:54:59,863 uvicorn.error INFO Finished server process [188048]
+20:55:00,808 root INFO Logging Student mongodb queries & logic errors
+20:55:00,813 uvicorn.error INFO Started server process [188060]
+20:55:00,813 uvicorn.error INFO Waiting for application startup.
+20:55:00,814 uvicorn.error INFO Application startup complete.
+20:55:16,265 uvicorn.error INFO Shutting down
+20:55:16,366 uvicorn.error INFO Waiting for application shutdown.
+20:55:16,367 uvicorn.error INFO Application shutdown complete.
+20:55:16,367 uvicorn.error INFO Finished server process [188060]
+20:55:17,285 root INFO Logging Student mongodb queries & logic errors
+20:55:17,288 uvicorn.error INFO Started server process [188079]
+20:55:17,289 uvicorn.error INFO Waiting for application startup.
+20:55:17,289 uvicorn.error INFO Application startup complete.
+10:17:33,81 root INFO Logging Student mongodb queries & logic errors
+10:17:33,85 uvicorn.error INFO Started server process [2669]
+10:17:33,85 uvicorn.error INFO Waiting for application startup.
+10:17:33,85 uvicorn.error INFO Application startup complete.
+10:18:54,825 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1000}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x9fE\xed\xd9\xd6*I\xe0\xb1l\xcf\x87\xca\x1d\xba\xb5', 4)}), ('$db', 'students_transfer')]) 
+10:18:54,829 root INFO Succeded command aggregate id 783368690 completed in 4044 microseconds
+10:19:03,81 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1230}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x9fE\xed\xd9\xd6*I\xe0\xb1l\xcf\x87\xca\x1d\xba\xb5', 4)}), ('$db', 'students_transfer')]) 
+10:19:03,83 root INFO Succeded command aggregate id 1102520059 completed in 2493 microseconds
+10:19:03,84 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 1230}), ('projection', {'_id': 0}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'\x9fE\xed\xd9\xd6*I\xe0\xb1l\xcf\x87\xca\x1d\xba\xb5', 4)}), ('$db', 'students_transfer')]) 
+10:19:03,84 root INFO Succeded command find id 2044897763 completed in 479 microseconds
+10:19:03,85 root INFO Command ST delete **Details** SON([('delete', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x9fE\xed\xd9\xd6*I\xe0\xb1l\xcf\x87\xca\x1d\xba\xb5', 4)}), ('$db', 'students_transfer'), ('deletes', [SON([('q', {'student_id': 1230}), ('limit', 1)])])]) 
+10:19:03,107 root INFO Succeded command delete id 1967513926 completed in 21796 microseconds
+10:19:03,107 root INFO Command ST delete **Details** SON([('delete', 'students_grade'), ('ordered', True), ('lsid', {'id': Binary(b'\x9fE\xed\xd9\xd6*I\xe0\xb1l\xcf\x87\xca\x1d\xba\xb5', 4)}), ('$db', 'students_transfer'), ('deletes', [SON([('q', {'student_id': 1230}), ('limit', 0)])])]) 
+10:19:03,128 root INFO Succeded command delete id 1365180540 completed in 20571 microseconds
+10:25:59,914 uvicorn.error INFO Shutting down
+10:26:00,15 uvicorn.error INFO Waiting for application shutdown.
+10:26:00,16 uvicorn.error INFO Application shutdown complete.
+10:26:00,16 uvicorn.error INFO Finished server process [2669]
+10:26:11,18 root INFO Logging Student mongodb queries & logic errors
+10:26:11,25 uvicorn.error INFO Started server process [3343]
+10:26:11,25 uvicorn.error INFO Waiting for application startup.
+10:26:11,26 uvicorn.error INFO Application startup complete.
+10:28:03,72 uvicorn.error INFO Shutting down
+10:28:03,173 uvicorn.error INFO Waiting for application shutdown.
+10:28:03,173 uvicorn.error INFO Application shutdown complete.
+10:28:03,173 uvicorn.error INFO Finished server process [3343]
+10:28:04,98 root INFO Logging Student mongodb queries & logic errors
+10:28:04,101 uvicorn.error INFO Started server process [3394]
+10:28:04,101 uvicorn.error INFO Waiting for application startup.
+10:28:04,102 uvicorn.error INFO Application startup complete.
+10:35:33,94 uvicorn.error INFO Shutting down
+10:35:33,195 uvicorn.error INFO Waiting for application shutdown.
+10:35:33,195 uvicorn.error INFO Application shutdown complete.
+10:35:33,196 uvicorn.error INFO Finished server process [3394]
+10:35:34,42 root INFO Logging Student mongodb queries & logic errors
+10:35:34,45 uvicorn.error INFO Started server process [3449]
+10:35:34,45 uvicorn.error INFO Waiting for application startup.
+10:35:34,45 uvicorn.error INFO Application startup complete.
+10:36:12,278 uvicorn.error INFO Shutting down
+10:36:12,379 uvicorn.error INFO Waiting for application shutdown.
+10:36:12,379 uvicorn.error INFO Application shutdown complete.
+10:36:12,380 uvicorn.error INFO Finished server process [3449]
+10:36:13,20 root INFO Logging Student mongodb queries & logic errors
+10:36:13,22 uvicorn.error INFO Started server process [3466]
+10:36:13,23 uvicorn.error INFO Waiting for application startup.
+10:36:13,23 uvicorn.error INFO Application startup complete.
+10:36:30,782 uvicorn.error INFO Shutting down
+10:36:30,883 uvicorn.error INFO Waiting for application shutdown.
+10:36:30,884 uvicorn.error INFO Application shutdown complete.
+10:36:30,884 uvicorn.error INFO Finished server process [3466]
+10:36:31,479 root INFO Logging Student mongodb queries & logic errors
+10:36:31,482 uvicorn.error INFO Started server process [3478]
+10:36:31,482 uvicorn.error INFO Waiting for application startup.
+10:36:31,482 uvicorn.error INFO Application startup complete.
+10:36:58,272 uvicorn.error INFO Shutting down
+10:36:58,373 uvicorn.error INFO Waiting for application shutdown.
+10:36:58,374 uvicorn.error INFO Application shutdown complete.
+10:36:58,374 uvicorn.error INFO Finished server process [3478]
+10:36:58,950 root INFO Logging Student mongodb queries & logic errors
+10:36:58,953 uvicorn.error INFO Started server process [3491]
+10:36:58,953 uvicorn.error INFO Waiting for application startup.
+10:36:58,953 uvicorn.error INFO Application startup complete.
+10:37:06,879 uvicorn.error INFO Shutting down
+10:37:06,980 uvicorn.error INFO Waiting for application shutdown.
+10:37:06,981 uvicorn.error INFO Application shutdown complete.
+10:37:06,981 uvicorn.error INFO Finished server process [3491]
+10:37:07,891 root INFO Logging Student mongodb queries & logic errors
+10:37:07,894 uvicorn.error INFO Started server process [3502]
+10:37:07,894 uvicorn.error INFO Waiting for application startup.
+10:37:07,895 uvicorn.error INFO Application startup complete.
+10:37:58,955 uvicorn.error INFO Shutting down
+10:37:59,56 uvicorn.error INFO Waiting for application shutdown.
+10:37:59,56 uvicorn.error INFO Application shutdown complete.
+10:37:59,57 uvicorn.error INFO Finished server process [3502]
+10:37:59,884 root INFO Logging Student mongodb queries & logic errors
+10:37:59,887 uvicorn.error INFO Started server process [3517]
+10:37:59,887 uvicorn.error INFO Waiting for application startup.
+10:37:59,887 uvicorn.error INFO Application startup complete.
+10:38:11,623 uvicorn.error INFO Shutting down
+10:38:11,724 uvicorn.error INFO Waiting for application shutdown.
+10:38:11,724 uvicorn.error INFO Application shutdown complete.
+10:38:11,724 uvicorn.error INFO Finished server process [3517]
+10:38:12,335 root INFO Logging Student mongodb queries & logic errors
+10:38:12,338 uvicorn.error INFO Started server process [3528]
+10:38:12,339 uvicorn.error INFO Waiting for application startup.
+10:38:12,339 uvicorn.error INFO Application startup complete.
+10:38:12,539 uvicorn.error INFO Shutting down
+10:38:12,640 uvicorn.error INFO Waiting for application shutdown.
+10:38:12,641 uvicorn.error INFO Application shutdown complete.
+10:38:12,641 uvicorn.error INFO Finished server process [3528]
+10:38:13,266 root INFO Logging Student mongodb queries & logic errors
+10:38:13,270 uvicorn.error INFO Started server process [3539]
+10:38:13,270 uvicorn.error INFO Waiting for application startup.
+10:38:13,270 uvicorn.error INFO Application startup complete.
+10:38:48,316 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 225, in edit_student
+    student_id = int(student_id)
+ValueError: invalid literal for int() with base 10: ''
+10:40:25,700 uvicorn.error INFO Shutting down
+10:40:25,801 uvicorn.error INFO Waiting for application shutdown.
+10:40:25,802 uvicorn.error INFO Application shutdown complete.
+10:40:25,802 uvicorn.error INFO Finished server process [3539]
+10:40:26,370 root INFO Logging Student mongodb queries & logic errors
+10:40:26,372 uvicorn.error INFO Started server process [3564]
+10:40:26,373 uvicorn.error INFO Waiting for application startup.
+10:40:26,373 uvicorn.error INFO Application startup complete.
+10:40:44,828 uvicorn.error INFO Shutting down
+10:40:44,929 uvicorn.error INFO Waiting for application shutdown.
+10:40:44,930 uvicorn.error INFO Application shutdown complete.
+10:40:44,930 uvicorn.error INFO Finished server process [3564]
+10:40:45,822 root INFO Logging Student mongodb queries & logic errors
+10:40:45,826 uvicorn.error INFO Started server process [3577]
+10:40:45,826 uvicorn.error INFO Waiting for application startup.
+10:40:45,827 uvicorn.error INFO Application startup complete.
+10:40:51,44 uvicorn.error INFO Shutting down
+10:40:51,144 uvicorn.error INFO Waiting for application shutdown.
+10:40:51,145 uvicorn.error INFO Application shutdown complete.
+10:40:51,145 uvicorn.error INFO Finished server process [3577]
+10:40:51,881 root INFO Logging Student mongodb queries & logic errors
+10:40:51,884 uvicorn.error INFO Started server process [3588]
+10:40:51,884 uvicorn.error INFO Waiting for application startup.
+10:40:51,884 uvicorn.error INFO Application startup complete.
+10:42:05,139 uvicorn.error INFO Shutting down
+10:42:05,240 uvicorn.error INFO Waiting for application shutdown.
+10:42:05,241 uvicorn.error INFO Application shutdown complete.
+10:42:05,241 uvicorn.error INFO Finished server process [3588]
+10:42:05,909 root INFO Logging Student mongodb queries & logic errors
+10:42:05,912 uvicorn.error INFO Started server process [3606]
+10:42:05,912 uvicorn.error INFO Waiting for application startup.
+10:42:05,913 uvicorn.error INFO Application startup complete.
+10:42:16,348 uvicorn.error INFO Shutting down
+10:42:16,449 uvicorn.error INFO Waiting for application shutdown.
+10:42:16,449 uvicorn.error INFO Application shutdown complete.
+10:42:16,450 uvicorn.error INFO Finished server process [3606]
+10:42:17,454 root INFO Logging Student mongodb queries & logic errors
+10:42:17,458 uvicorn.error INFO Started server process [3624]
+10:42:17,458 uvicorn.error INFO Waiting for application startup.
+10:42:17,458 uvicorn.error INFO Application startup complete.
+10:43:45,740 uvicorn.error INFO Shutting down
+10:43:45,839 uvicorn.error INFO Waiting for application shutdown.
+10:43:45,839 uvicorn.error INFO Application shutdown complete.
+10:43:45,839 uvicorn.error INFO Finished server process [3624]
+10:43:46,514 root INFO Logging Student mongodb queries & logic errors
+10:43:46,517 uvicorn.error INFO Started server process [3639]
+10:43:46,517 uvicorn.error INFO Waiting for application startup.
+10:43:46,518 uvicorn.error INFO Application startup complete.
+10:44:03,975 uvicorn.error INFO Shutting down
+10:44:04,76 uvicorn.error INFO Waiting for application shutdown.
+10:44:04,76 uvicorn.error INFO Application shutdown complete.
+10:44:04,76 uvicorn.error INFO Finished server process [3639]
+10:44:04,977 root INFO Logging Student mongodb queries & logic errors
+10:44:04,980 uvicorn.error INFO Started server process [3651]
+10:44:04,980 uvicorn.error INFO Waiting for application startup.
+10:44:04,981 uvicorn.error INFO Application startup complete.
+10:44:10,701 uvicorn.error INFO Shutting down
+10:44:10,801 uvicorn.error INFO Waiting for application shutdown.
+10:44:10,802 uvicorn.error INFO Application shutdown complete.
+10:44:10,802 uvicorn.error INFO Finished server process [3651]
+10:44:11,418 root INFO Logging Student mongodb queries & logic errors
+10:44:11,420 uvicorn.error INFO Started server process [3662]
+10:44:11,421 uvicorn.error INFO Waiting for application startup.
+10:44:11,421 uvicorn.error INFO Application startup complete.
+10:45:32,471 uvicorn.error INFO Shutting down
+10:45:32,572 uvicorn.error INFO Waiting for application shutdown.
+10:45:32,573 uvicorn.error INFO Application shutdown complete.
+10:45:32,573 uvicorn.error INFO Finished server process [3662]
+10:45:33,445 root INFO Logging Student mongodb queries & logic errors
+10:45:33,448 uvicorn.error INFO Started server process [3684]
+10:45:33,448 uvicorn.error INFO Waiting for application startup.
+10:45:33,449 uvicorn.error INFO Application startup complete.
+10:47:59,343 uvicorn.error INFO Shutting down
+10:47:59,444 uvicorn.error INFO Waiting for application shutdown.
+10:47:59,444 uvicorn.error INFO Application shutdown complete.
+10:47:59,445 uvicorn.error INFO Finished server process [3684]
+10:48:00,82 root INFO Logging Student mongodb queries & logic errors
+10:48:00,86 uvicorn.error INFO Started server process [4236]
+10:48:00,86 uvicorn.error INFO Waiting for application startup.
+10:48:00,86 uvicorn.error INFO Application startup complete.
+10:48:05,564 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 239, in edit_student
+    return edit_student_info(rservice,rtype,field_name,edit_info,student_id)
+TypeError: edit_student_info() takes 3 positional arguments but 5 were given
+10:48:25,762 uvicorn.error INFO Shutting down
+10:48:25,862 uvicorn.error INFO Waiting for application shutdown.
+10:48:25,863 uvicorn.error INFO Application shutdown complete.
+10:48:25,863 uvicorn.error INFO Finished server process [4236]
+10:48:26,656 root INFO Logging Student mongodb queries & logic errors
+10:48:26,659 uvicorn.error INFO Started server process [4260]
+10:48:26,659 uvicorn.error INFO Waiting for application startup.
+10:48:26,660 uvicorn.error INFO Application startup complete.
+10:48:29,304 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2002}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x95\xda$;f\xbcD \x9a\x1b\xd6\xd8\xd8\xce\xb5\xc6', 4)}), ('$db', 'students_transfer')]) 
+10:48:29,307 root INFO Succeded command aggregate id 1957747793 completed in 2016 microseconds
+10:48:29,307 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 239, in edit_student
+    return edit_student_info(field_name,edit_info,student_id)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 160, in edit_student_info
+    newvalues = { "$set": { field_name: field_value_change } }
+NameError: name 'field_value_change' is not defined
+10:48:52,29 uvicorn.error INFO Shutting down
+10:48:52,129 uvicorn.error INFO Waiting for application shutdown.
+10:48:52,130 uvicorn.error INFO Application shutdown complete.
+10:48:52,130 uvicorn.error INFO Finished server process [4260]
+10:48:52,623 root INFO Logging Student mongodb queries & logic errors
+10:48:52,626 uvicorn.error INFO Started server process [4284]
+10:48:52,626 uvicorn.error INFO Waiting for application startup.
+10:48:52,626 uvicorn.error INFO Application startup complete.
+10:49:19,417 uvicorn.error INFO Shutting down
+10:49:19,517 uvicorn.error INFO Waiting for application shutdown.
+10:49:19,518 uvicorn.error INFO Application shutdown complete.
+10:49:19,518 uvicorn.error INFO Finished server process [4284]
+10:49:20,94 root INFO Logging Student mongodb queries & logic errors
+10:49:20,98 uvicorn.error INFO Started server process [4305]
+10:49:20,98 uvicorn.error INFO Waiting for application startup.
+10:49:20,98 uvicorn.error INFO Application startup complete.
+10:49:20,801 uvicorn.error INFO Shutting down
+10:49:20,901 uvicorn.error INFO Waiting for application shutdown.
+10:49:20,902 uvicorn.error INFO Application shutdown complete.
+10:49:20,902 uvicorn.error INFO Finished server process [4305]
+10:49:21,582 root INFO Logging Student mongodb queries & logic errors
+10:49:21,586 uvicorn.error INFO Started server process [4316]
+10:49:21,587 uvicorn.error INFO Waiting for application startup.
+10:49:21,588 uvicorn.error INFO Application startup complete.
+10:49:22,724 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2002}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xaf\xe4\x923SxC \xa9 \x17\xc7_\xc2\xf6S', 4)}), ('$db', 'students_transfer')]) 
+10:49:22,727 root INFO Succeded command aggregate id 1957747793 completed in 2903 microseconds
+10:49:22,728 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\xaf\xe4\x923SxC \xa9 \x17\xc7_\xc2\xf6S', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2002}), ('u', {'$set': {'first_name': 'Quoc12'}}), ('multi', False), ('upsert', False)])])]) 
+10:49:22,739 root INFO Succeded command update id 424238335 completed in 10876 microseconds
+10:49:22,739 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 238, in edit_student
+    return edit_student_info(field_name,edit_info,student_id)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 164, in edit_student_info
+    for x in mycol.find(myquery):
+NameError: name 'mycol' is not defined
+10:49:34,229 uvicorn.error INFO Shutting down
+10:49:34,330 uvicorn.error INFO Waiting for application shutdown.
+10:49:34,330 uvicorn.error INFO Application shutdown complete.
+10:49:34,330 uvicorn.error INFO Finished server process [4316]
+10:49:35,113 root INFO Logging Student mongodb queries & logic errors
+10:49:35,116 uvicorn.error INFO Started server process [4342]
+10:49:35,116 uvicorn.error INFO Waiting for application startup.
+10:49:35,117 uvicorn.error INFO Application startup complete.
+10:49:35,704 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2002}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xabC\r\xc5\xbf\x8bC\x02\x9fV4\xd2\x17T2\xeb', 4)}), ('$db', 'students_transfer')]) 
+10:49:35,708 root INFO Succeded command aggregate id 1957747793 completed in 3465 microseconds
+10:49:35,708 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\xabC\r\xc5\xbf\x8bC\x02\x9fV4\xd2\x17T2\xeb', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2002}), ('u', {'$set': {'first_name': 'Quoc12'}}), ('multi', False), ('upsert', False)])])]) 
+10:49:35,709 root INFO Succeded command update id 424238335 completed in 901 microseconds
+10:49:35,710 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 238, in edit_student
+    return edit_student_info(field_name,edit_info,student_id)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 164, in edit_student_info
+    for x in student_info_db.find(myquery):
+NameError: name 'myquery' is not defined
+10:49:42,741 uvicorn.error INFO Shutting down
+10:49:42,842 uvicorn.error INFO Waiting for application shutdown.
+10:49:42,842 uvicorn.error INFO Application shutdown complete.
+10:49:42,842 uvicorn.error INFO Finished server process [4342]
+10:49:43,659 root INFO Logging Student mongodb queries & logic errors
+10:49:43,662 uvicorn.error INFO Started server process [4355]
+10:49:43,663 uvicorn.error INFO Waiting for application startup.
+10:49:43,663 uvicorn.error INFO Application startup complete.
+10:49:45,339 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2002}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x17\xe4\x88\x0c\xfb\xc0C\xa2\xb6\xee\xdeQ*\x06\xaa&', 4)}), ('$db', 'students_transfer')]) 
+10:49:45,341 root INFO Succeded command aggregate id 1957747793 completed in 2633 microseconds
+10:49:45,342 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x17\xe4\x88\x0c\xfb\xc0C\xa2\xb6\xee\xdeQ*\x06\xaa&', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2002}), ('u', {'$set': {'first_name': 'Quoc12'}}), ('multi', False), ('upsert', False)])])]) 
+10:49:45,343 root INFO Succeded command update id 424238335 completed in 725 microseconds
+10:49:45,343 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2002}), ('lsid', {'id': Binary(b'\x17\xe4\x88\x0c\xfb\xc0C\xa2\xb6\xee\xdeQ*\x06\xaa&', 4)}), ('$db', 'students_transfer')]) 
+10:49:45,346 root INFO Succeded command find id 719885386 completed in 2012 microseconds
+10:49:45,346 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'ObjectId' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 235, in app
+    response_data = await serialize_response(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 149, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/encoders.py", line 101, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+10:50:09,59 uvicorn.error INFO Shutting down
+10:50:09,160 uvicorn.error INFO Waiting for application shutdown.
+10:50:09,160 uvicorn.error INFO Application shutdown complete.
+10:50:09,161 uvicorn.error INFO Finished server process [4355]
+10:50:09,750 root INFO Logging Student mongodb queries & logic errors
+10:50:09,753 uvicorn.error INFO Started server process [4378]
+10:50:09,753 uvicorn.error INFO Waiting for application startup.
+10:50:09,753 uvicorn.error INFO Application startup complete.
+10:50:12,291 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2002}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer')]) 
+10:50:12,295 root INFO Succeded command aggregate id 1957747793 completed in 3904 microseconds
+10:50:12,295 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2002}), ('u', {'$set': {'first_name': 'Quoc12'}}), ('multi', False), ('upsert', False)])])]) 
+10:50:12,296 root INFO Succeded command update id 424238335 completed in 932 microseconds
+10:50:12,297 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2002}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer')]) 
+10:50:12,297 root INFO Succeded command find id 719885386 completed in 716 microseconds
+10:50:36,682 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer')]) 
+10:50:36,686 root INFO Succeded command aggregate id 1189641421 completed in 3429 microseconds
+10:50:36,686 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 1450}), ('u', {'$set': {'first_name': 'Quoc12'}}), ('multi', False), ('upsert', False)])])]) 
+10:50:36,688 root INFO Succeded command update id 1025202362 completed in 1400 microseconds
+10:50:36,689 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 1450}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer')]) 
+10:50:36,691 root INFO Succeded command find id 1350490027 completed in 1347 microseconds
+10:50:39,128 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer')]) 
+10:50:39,133 root INFO Succeded command aggregate id 783368690 completed in 3949 microseconds
+10:50:39,134 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 1450}), ('u', {'$set': {'first_name': 'Quoc12'}}), ('multi', False), ('upsert', False)])])]) 
+10:50:39,135 root INFO Succeded command update id 1102520059 completed in 1068 microseconds
+10:50:39,136 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 1450}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'\x989\xcaS\xe3NDF\x96\xea_\xf9\xc5:u\x15', 4)}), ('$db', 'students_transfer')]) 
+10:50:39,137 root INFO Succeded command find id 2044897763 completed in 408 microseconds
+10:51:46,461 uvicorn.error INFO Shutting down
+10:51:46,562 uvicorn.error INFO Waiting for application shutdown.
+10:51:46,562 uvicorn.error INFO Application shutdown complete.
+10:51:46,563 uvicorn.error INFO Finished server process [4378]
+10:51:47,423 root INFO Logging Student mongodb queries & logic errors
+10:51:47,426 uvicorn.error INFO Started server process [4422]
+10:51:47,426 uvicorn.error INFO Waiting for application startup.
+10:51:47,426 uvicorn.error INFO Application startup complete.
+10:51:49,443 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b"\x05\x05[\xa61<B/\x88\xef'U`^~\xf7", 4)}), ('$db', 'students_transfer')]) 
+10:51:49,445 root INFO Succeded command aggregate id 1957747793 completed in 2164 microseconds
+10:51:49,445 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 1450}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b"\x05\x05[\xa61<B/\x88\xef'U`^~\xf7", 4)}), ('$db', 'students_transfer')]) 
+10:51:49,446 root INFO Succeded command find id 424238335 completed in 464 microseconds
+10:52:02,573 uvicorn.error INFO Shutting down
+10:52:02,673 uvicorn.error INFO Waiting for application shutdown.
+10:52:02,674 uvicorn.error INFO Application shutdown complete.
+10:52:02,674 uvicorn.error INFO Finished server process [4422]
+10:52:03,525 root INFO Logging Student mongodb queries & logic errors
+10:52:03,531 uvicorn.error INFO Started server process [4600]
+10:52:03,533 uvicorn.error INFO Waiting for application startup.
+10:52:03,534 uvicorn.error INFO Application startup complete.
+10:52:04,930 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xe0\x83\xbcO\xc1UB_\xaa\xec\xafV\x14\xf6\xdb\xed', 4)}), ('$db', 'students_transfer')]) 
+10:52:04,934 root INFO Succeded command aggregate id 1957747793 completed in 3318 microseconds
+10:52:04,935 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b'\xe0\x83\xbcO\xc1UB_\xaa\xec\xafV\x14\xf6\xdb\xed', 4)}), ('$db', 'students_transfer')]) 
+10:52:04,936 root INFO Succeded command find id 424238335 completed in 924 microseconds
+10:53:05,297 uvicorn.error INFO Shutting down
+10:53:05,398 uvicorn.error INFO Waiting for application shutdown.
+10:53:05,398 uvicorn.error INFO Application shutdown complete.
+10:53:05,398 uvicorn.error INFO Finished server process [4600]
+10:53:06,119 root INFO Logging Student mongodb queries & logic errors
+10:53:06,122 uvicorn.error INFO Started server process [4769]
+10:53:06,123 uvicorn.error INFO Waiting for application startup.
+10:53:06,123 uvicorn.error INFO Application startup complete.
+10:53:07,706 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'i\xc4\xbf\x85Y\x01L\xc4\xb6\xd5\xc6ht\x01\xd3\xfe', 4)}), ('$db', 'students_transfer')]) 
+10:53:07,708 root INFO Succeded command aggregate id 1957747793 completed in 2128 microseconds
+10:53:07,709 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 238, in edit_student
+    return edit_student_info(field_name,edit_info,student_id)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 164, in edit_student_info
+    for x in student_info_db.find_many(query):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/pymongo/collection.py", line 3166, in __call__
+    raise TypeError(
+TypeError: 'Collection' object is not callable. If you meant to call the 'find_many' method on a 'Collection' object it is failing because no such method exists.
+10:53:19,270 uvicorn.error INFO Shutting down
+10:53:19,370 uvicorn.error INFO Waiting for application shutdown.
+10:53:19,371 uvicorn.error INFO Application shutdown complete.
+10:53:19,371 uvicorn.error INFO Finished server process [4769]
+10:53:20,204 root INFO Logging Student mongodb queries & logic errors
+10:53:20,207 uvicorn.error INFO Started server process [4788]
+10:53:20,207 uvicorn.error INFO Waiting for application startup.
+10:53:20,208 uvicorn.error INFO Application startup complete.
+10:53:21,637 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xd6\x8a\x8c\xfe\xdf>F\xbb\x9b9A\xf8\xe2\x1e\x11x', 4)}), ('$db', 'students_transfer')]) 
+10:53:21,640 root INFO Succeded command aggregate id 1957747793 completed in 2036 microseconds
+10:53:21,640 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('lsid', {'id': Binary(b'\xd6\x8a\x8c\xfe\xdf>F\xbb\x9b9A\xf8\xe2\x1e\x11x', 4)}), ('$db', 'students_transfer')]) 
+10:53:21,642 root INFO Succeded command find id 424238335 completed in 1766 microseconds
+10:53:21,643 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'ObjectId' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 235, in app
+    response_data = await serialize_response(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 149, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/encoders.py", line 101, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+10:53:27,835 uvicorn.error INFO Shutting down
+10:53:27,936 uvicorn.error INFO Waiting for application shutdown.
+10:53:27,936 uvicorn.error INFO Application shutdown complete.
+10:53:27,937 uvicorn.error INFO Finished server process [4788]
+10:53:28,647 root INFO Logging Student mongodb queries & logic errors
+10:53:28,650 uvicorn.error INFO Started server process [4804]
+10:53:28,650 uvicorn.error INFO Waiting for application startup.
+10:53:28,650 uvicorn.error INFO Application startup complete.
+10:53:56,637 uvicorn.error INFO Shutting down
+10:53:56,738 uvicorn.error INFO Waiting for application shutdown.
+10:53:56,738 uvicorn.error INFO Application shutdown complete.
+10:53:56,739 uvicorn.error INFO Finished server process [4804]
+10:54:01,233 root INFO Logging Student mongodb queries & logic errors
+10:54:01,241 uvicorn.error INFO Started server process [4861]
+10:54:01,241 uvicorn.error INFO Waiting for application startup.
+10:54:01,242 uvicorn.error INFO Application startup complete.
+10:54:03,262 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xf2H\x0b\x0f\xca\x07D1\xbd\x94[@\x80\xff\x1f!', 4)}), ('$db', 'students_transfer')]) 
+10:54:03,266 root INFO Succeded command aggregate id 1957747793 completed in 3149 microseconds
+10:54:03,266 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xf2H\x0b\x0f\xca\x07D1\xbd\x94[@\x80\xff\x1f!', 4)}), ('$db', 'students_transfer')]) 
+10:54:03,268 root INFO Succeded command aggregate id 424238335 completed in 1821 microseconds
+10:56:41,904 uvicorn.error INFO Shutting down
+10:56:42,4 uvicorn.error INFO Waiting for application shutdown.
+10:56:42,5 uvicorn.error INFO Application shutdown complete.
+10:56:42,5 uvicorn.error INFO Finished server process [4861]
+10:56:42,865 root INFO Logging Student mongodb queries & logic errors
+10:56:42,868 uvicorn.error INFO Started server process [4990]
+10:56:42,868 uvicorn.error INFO Waiting for application startup.
+10:56:42,868 uvicorn.error INFO Application startup complete.
+10:56:47,204 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xa9\xaf\xc1\xc2\x97\x98B$\x95@N\x8d\xa4U\x0f\x82', 4)}), ('$db', 'students_transfer')]) 
+10:56:47,206 root INFO Succeded command aggregate id 1957747793 completed in 1700 microseconds
+10:56:47,206 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\xa9\xaf\xc1\xc2\x97\x98B$\x95@N\x8d\xa4U\x0f\x82', 4)}), ('$db', 'students_transfer')]) 
+10:56:47,208 root INFO Succeded command find id 424238335 completed in 1442 microseconds
+10:57:12,665 uvicorn.error INFO Shutting down
+10:57:12,766 uvicorn.error INFO Waiting for application shutdown.
+10:57:12,767 uvicorn.error INFO Application shutdown complete.
+10:57:12,767 uvicorn.error INFO Finished server process [4990]
+10:57:13,457 root INFO Logging Student mongodb queries & logic errors
+10:57:13,460 uvicorn.error INFO Started server process [5025]
+10:57:13,460 uvicorn.error INFO Waiting for application startup.
+10:57:13,461 uvicorn.error INFO Application startup complete.
+10:57:13,824 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x850\x05\x86\xbb\xdbE\x13\xbb\x03\x8f\x11h!\x16\xbf', 4)}), ('$db', 'students_transfer')]) 
+10:57:13,827 root INFO Succeded command aggregate id 1957747793 completed in 2431 microseconds
+10:57:13,827 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x850\x05\x86\xbb\xdbE\x13\xbb\x03\x8f\x11h!\x16\xbf', 4)}), ('$db', 'students_transfer')]) 
+10:57:13,830 root INFO Succeded command find id 424238335 completed in 2401 microseconds
+10:57:20,585 uvicorn.error INFO Shutting down
+10:57:20,686 uvicorn.error INFO Waiting for application shutdown.
+10:57:20,686 uvicorn.error INFO Application shutdown complete.
+10:57:20,686 uvicorn.error INFO Finished server process [5025]
+10:57:21,513 root INFO Logging Student mongodb queries & logic errors
+10:57:21,517 uvicorn.error INFO Started server process [5038]
+10:57:21,517 uvicorn.error INFO Waiting for application startup.
+10:57:21,517 uvicorn.error INFO Application startup complete.
+10:57:21,688 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b"\x08\x02'_x\xf9@\xfc\x8c\xf1~\x1d\xd6\xack\x86", 4)}), ('$db', 'students_transfer')]) 
+10:57:21,691 root INFO Succeded command aggregate id 1957747793 completed in 3650 microseconds
+10:57:21,692 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('limit', 1), ('singleBatch', True), ('lsid', {'id': Binary(b"\x08\x02'_x\xf9@\xfc\x8c\xf1~\x1d\xd6\xack\x86", 4)}), ('$db', 'students_transfer')]) 
+10:57:21,694 root INFO Succeded command find id 424238335 completed in 1234 microseconds
+10:57:29,142 uvicorn.error INFO Shutting down
+10:57:29,242 uvicorn.error INFO Waiting for application shutdown.
+10:57:29,243 uvicorn.error INFO Application shutdown complete.
+10:57:29,243 uvicorn.error INFO Finished server process [5038]
+10:57:30,37 root INFO Logging Student mongodb queries & logic errors
+10:57:30,40 uvicorn.error INFO Started server process [5051]
+10:57:30,40 uvicorn.error INFO Waiting for application startup.
+10:57:30,40 uvicorn.error INFO Application startup complete.
+10:57:30,45 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x90v\xf3\xf9\x9b\x15A\xa1\xb7\x85z"\x06\xa7\x11\x89', 4)}), ('$db', 'students_transfer')]) 
+10:57:30,46 root INFO Succeded command aggregate id 1957747793 completed in 1293 microseconds
+10:57:30,46 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x90v\xf3\xf9\x9b\x15A\xa1\xb7\x85z"\x06\xa7\x11\x89', 4)}), ('$db', 'students_transfer')]) 
+10:57:30,48 root INFO Succeded command find id 424238335 completed in 1235 microseconds
+10:57:39,537 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x90v\xf3\xf9\x9b\x15A\xa1\xb7\x85z"\x06\xa7\x11\x89', 4)}), ('$db', 'students_transfer')]) 
+10:57:39,542 root INFO Succeded command aggregate id 719885386 completed in 4962 microseconds
+10:57:39,543 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x90v\xf3\xf9\x9b\x15A\xa1\xb7\x85z"\x06\xa7\x11\x89', 4)}), ('$db', 'students_transfer')]) 
+10:57:39,546 root INFO Succeded command find id 1649760492 completed in 2424 microseconds
+10:57:45,691 uvicorn.error INFO Shutting down
+10:57:45,792 uvicorn.error INFO Waiting for application shutdown.
+10:57:45,793 uvicorn.error INFO Application shutdown complete.
+10:57:45,793 uvicorn.error INFO Finished server process [5051]
+10:57:46,490 root INFO Logging Student mongodb queries & logic errors
+10:57:46,494 uvicorn.error INFO Started server process [5068]
+10:57:46,494 uvicorn.error INFO Waiting for application startup.
+10:57:46,495 uvicorn.error INFO Application startup complete.
+10:57:49,906 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer')]) 
+10:57:49,908 root INFO Succeded command aggregate id 1957747793 completed in 2460 microseconds
+10:57:49,909 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'Quoc12'}}), ('multi', False), ('upsert', False)])])]) 
+10:57:49,910 root INFO Succeded command update id 424238335 completed in 988 microseconds
+10:57:49,910 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer')]) 
+10:57:49,912 root INFO Succeded command find id 719885386 completed in 1529 microseconds
+10:57:50,843 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer')]) 
+10:57:50,845 root INFO Succeded command aggregate id 1649760492 completed in 1565 microseconds
+10:57:50,845 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'Quoc12'}}), ('multi', False), ('upsert', False)])])]) 
+10:57:50,847 root INFO Succeded command update id 596516649 completed in 1906 microseconds
+10:57:50,848 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer')]) 
+10:57:50,852 root INFO Succeded command find id 1189641421 completed in 2891 microseconds
+10:58:18,494 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer')]) 
+10:58:18,497 root INFO Succeded command aggregate id 1102520059 completed in 2707 microseconds
+10:58:18,498 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'Quoc123'}}), ('multi', False), ('upsert', False)])])]) 
+10:58:18,499 root INFO Succeded command update id 2044897763 completed in 911 microseconds
+10:58:18,500 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer')]) 
+10:58:18,501 root INFO Succeded command find id 1967513926 completed in 1592 microseconds
+10:58:20,662 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 1450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer')]) 
+10:58:20,665 root INFO Succeded command aggregate id 1365180540 completed in 2507 microseconds
+10:58:20,666 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'Quoc123'}}), ('multi', False), ('upsert', False)])])]) 
+10:58:20,669 root INFO Succeded command update id 1540383426 completed in 2599 microseconds
+10:58:20,669 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b"\x16Ao!6\xdfM\x89\xbb\x06B\x85\xd5\xd8'{", 4)}), ('$db', 'students_transfer')]) 
+10:58:20,672 root INFO Succeded command find id 304089172 completed in 2606 microseconds
+11:00:20,403 uvicorn.error INFO Shutting down
+11:00:20,503 uvicorn.error INFO Waiting for application shutdown.
+11:00:20,504 uvicorn.error INFO Application shutdown complete.
+11:00:20,504 uvicorn.error INFO Finished server process [5068]
+11:00:21,134 root INFO Logging Student mongodb queries & logic errors
+11:00:21,137 uvicorn.error INFO Started server process [5219]
+11:00:21,137 uvicorn.error INFO Waiting for application startup.
+11:00:21,137 uvicorn.error INFO Application startup complete.
+11:02:40,296 uvicorn.error INFO Shutting down
+11:02:40,396 uvicorn.error INFO Waiting for application shutdown.
+11:02:40,397 uvicorn.error INFO Application shutdown complete.
+11:02:40,397 uvicorn.error INFO Finished server process [5219]
+11:02:41,252 root INFO Logging Student mongodb queries & logic errors
+11:02:41,255 uvicorn.error INFO Started server process [5495]
+11:02:41,255 uvicorn.error INFO Waiting for application startup.
+11:02:41,255 uvicorn.error INFO Application startup complete.
+11:03:07,23 uvicorn.error INFO Shutting down
+11:03:07,124 uvicorn.error INFO Waiting for application shutdown.
+11:03:07,124 uvicorn.error INFO Application shutdown complete.
+11:03:07,124 uvicorn.error INFO Finished server process [5495]
+11:03:07,723 root INFO Logging Student mongodb queries & logic errors
+11:03:07,726 uvicorn.error INFO Started server process [5510]
+11:03:07,727 uvicorn.error INFO Waiting for application startup.
+11:03:07,727 uvicorn.error INFO Application startup complete.
+11:03:32,0 uvicorn.error INFO Shutting down
+11:03:32,101 uvicorn.error INFO Waiting for application shutdown.
+11:03:32,102 uvicorn.error INFO Application shutdown complete.
+11:03:32,102 uvicorn.error INFO Finished server process [5510]
+11:03:32,753 root INFO Logging Student mongodb queries & logic errors
+11:03:32,758 uvicorn.error INFO Started server process [5549]
+11:03:32,758 uvicorn.error INFO Waiting for application startup.
+11:03:32,759 uvicorn.error INFO Application startup complete.
+11:04:04,957 uvicorn.error INFO Shutting down
+11:04:05,58 uvicorn.error INFO Waiting for application shutdown.
+11:04:05,58 uvicorn.error INFO Application shutdown complete.
+11:04:05,59 uvicorn.error INFO Finished server process [5549]
+11:04:05,803 root INFO Logging Student mongodb queries & logic errors
+11:04:05,806 uvicorn.error INFO Started server process [5584]
+11:04:05,807 uvicorn.error INFO Waiting for application startup.
+11:04:05,807 uvicorn.error INFO Application startup complete.
+11:04:21,759 uvicorn.error INFO Shutting down
+11:04:21,860 uvicorn.error INFO Waiting for application shutdown.
+11:04:21,861 uvicorn.error INFO Application shutdown complete.
+11:04:21,861 uvicorn.error INFO Finished server process [5584]
+11:04:22,850 root INFO Logging Student mongodb queries & logic errors
+11:04:22,853 uvicorn.error INFO Started server process [5595]
+11:04:22,853 uvicorn.error INFO Waiting for application startup.
+11:04:22,853 uvicorn.error INFO Application startup complete.
+11:04:59,786 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xa1\x0c\x18\xfc~}A\x1f\xbd\xd4dBa\x92\xdc\x13', 4)}), ('$db', 'students_transfer')]) 
+11:04:59,788 root INFO Succeded command aggregate id 1649760492 completed in 2616 microseconds
+11:05:20,538 uvicorn.error INFO Shutting down
+11:05:20,639 uvicorn.error INFO Waiting for application shutdown.
+11:05:20,639 uvicorn.error INFO Application shutdown complete.
+11:05:20,639 uvicorn.error INFO Finished server process [5595]
+11:05:21,363 root INFO Logging Student mongodb queries & logic errors
+11:05:21,367 uvicorn.error INFO Started server process [5659]
+11:05:21,367 uvicorn.error INFO Waiting for application startup.
+11:05:21,367 uvicorn.error INFO Application startup complete.
+11:05:22,491 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 229, in edit_student
+    params = json.loads(update_info)
+  File "/usr/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.9/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+11:06:18,932 uvicorn.error INFO Shutting down
+11:06:19,33 uvicorn.error INFO Waiting for application shutdown.
+11:06:19,33 uvicorn.error INFO Application shutdown complete.
+11:06:19,33 uvicorn.error INFO Finished server process [5659]
+11:06:19,960 root INFO Logging Student mongodb queries & logic errors
+11:06:19,963 uvicorn.error INFO Started server process [5707]
+11:06:19,964 uvicorn.error INFO Waiting for application startup.
+11:06:19,964 uvicorn.error INFO Application startup complete.
+11:06:20,294 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 229, in edit_student
+    return (update_info['first_name'])
+TypeError: string indices must be integers
+11:06:41,734 uvicorn.error INFO Shutting down
+11:06:41,835 uvicorn.error INFO Waiting for application shutdown.
+11:06:41,836 uvicorn.error INFO Application shutdown complete.
+11:06:41,836 uvicorn.error INFO Finished server process [5707]
+11:06:42,478 root INFO Logging Student mongodb queries & logic errors
+11:06:42,482 uvicorn.error INFO Started server process [5722]
+11:06:42,482 uvicorn.error INFO Waiting for application startup.
+11:06:42,482 uvicorn.error INFO Application startup complete.
+11:06:58,132 uvicorn.error INFO Shutting down
+11:06:58,232 uvicorn.error INFO Waiting for application shutdown.
+11:06:58,233 uvicorn.error INFO Application shutdown complete.
+11:06:58,233 uvicorn.error INFO Finished server process [5722]
+11:06:59,307 root INFO Logging Student mongodb queries & logic errors
+11:06:59,312 uvicorn.error INFO Started server process [5766]
+11:06:59,312 uvicorn.error INFO Waiting for application startup.
+11:06:59,314 uvicorn.error INFO Application startup complete.
+11:06:59,319 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 229, in edit_student
+    return (dict(update_info))
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+11:08:20,74 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 229, in edit_student
+    return (dict(update_info))
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+11:08:31,576 uvicorn.error INFO Shutting down
+11:08:31,677 uvicorn.error INFO Waiting for application shutdown.
+11:08:31,678 uvicorn.error INFO Application shutdown complete.
+11:08:31,678 uvicorn.error INFO Finished server process [5766]
+11:08:32,492 root INFO Logging Student mongodb queries & logic errors
+11:08:32,497 uvicorn.error INFO Started server process [6192]
+11:08:32,498 uvicorn.error INFO Waiting for application startup.
+11:08:32,498 uvicorn.error INFO Application startup complete.
+11:08:54,860 uvicorn.error INFO Shutting down
+11:08:54,961 uvicorn.error INFO Waiting for application shutdown.
+11:08:54,962 uvicorn.error INFO Application shutdown complete.
+11:08:54,962 uvicorn.error INFO Finished server process [6192]
+11:08:55,491 root INFO Logging Student mongodb queries & logic errors
+11:08:55,497 uvicorn.error INFO Started server process [6223]
+11:08:55,497 uvicorn.error INFO Waiting for application startup.
+11:08:55,498 uvicorn.error INFO Application startup complete.
+11:09:02,714 uvicorn.error INFO Shutting down
+11:09:02,815 uvicorn.error INFO Waiting for application shutdown.
+11:09:02,816 uvicorn.error INFO Application shutdown complete.
+11:09:02,816 uvicorn.error INFO Finished server process [6223]
+11:09:03,443 root INFO Logging Student mongodb queries & logic errors
+11:09:03,446 uvicorn.error INFO Started server process [6279]
+11:09:03,446 uvicorn.error INFO Waiting for application startup.
+11:09:03,447 uvicorn.error INFO Application startup complete.
+11:11:13,822 uvicorn.error INFO Shutting down
+11:11:13,923 uvicorn.error INFO Waiting for application shutdown.
+11:11:13,924 uvicorn.error INFO Application shutdown complete.
+11:11:13,924 uvicorn.error INFO Finished server process [6279]
+11:11:14,620 root INFO Logging Student mongodb queries & logic errors
+11:11:14,623 uvicorn.error INFO Started server process [6463]
+11:11:14,623 uvicorn.error INFO Waiting for application startup.
+11:11:14,623 uvicorn.error INFO Application startup complete.
+11:11:55,348 uvicorn.error INFO Shutting down
+11:11:55,449 uvicorn.error INFO Waiting for application shutdown.
+11:11:55,449 uvicorn.error INFO Application shutdown complete.
+11:11:55,449 uvicorn.error INFO Finished server process [6463]
+11:11:56,127 root INFO Logging Student mongodb queries & logic errors
+11:11:56,130 uvicorn.error INFO Started server process [6500]
+11:11:56,131 uvicorn.error INFO Waiting for application startup.
+11:11:56,131 uvicorn.error INFO Application startup complete.
+11:11:56,833 uvicorn.error INFO Shutting down
+11:11:56,933 uvicorn.error INFO Waiting for application shutdown.
+11:11:56,933 uvicorn.error INFO Application shutdown complete.
+11:11:56,934 uvicorn.error INFO Finished server process [6500]
+11:11:57,864 root INFO Logging Student mongodb queries & logic errors
+11:11:57,867 uvicorn.error INFO Started server process [6521]
+11:11:57,867 uvicorn.error INFO Waiting for application startup.
+11:11:57,868 uvicorn.error INFO Application startup complete.
+11:11:58,606 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'*\xdd\xc0\xe1^\xbfN+\xbe\xc4\x03\xdb\x916N\xbe', 4)}), ('$db', 'students_transfer')]) 
+11:11:58,610 root INFO Succeded command aggregate id 1957747793 completed in 3347 microseconds
+11:11:58,611 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 234, in edit_student
+    for field_name, edit_info in updates:
+ValueError: too many values to unpack (expected 2)
+11:12:28,851 uvicorn.error INFO Shutting down
+11:12:28,952 uvicorn.error INFO Waiting for application shutdown.
+11:12:28,952 uvicorn.error INFO Application shutdown complete.
+11:12:28,953 uvicorn.error INFO Finished server process [6521]
+11:12:29,913 root INFO Logging Student mongodb queries & logic errors
+11:12:29,916 uvicorn.error INFO Started server process [6556]
+11:12:29,916 uvicorn.error INFO Waiting for application startup.
+11:12:29,917 uvicorn.error INFO Application startup complete.
+11:12:31,48 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'hE\x94\x9e\x0ccI6\x88w+)2%.\x85', 4)}), ('$db', 'students_transfer')]) 
+11:12:31,51 root INFO Succeded command aggregate id 1957747793 completed in 2304 microseconds
+11:12:31,52 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/qtran2/.local/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/qtran2/Documents/GitHub/python-student-data-ingestion/./student.py", line 234, in edit_student
+    for field_name, edit_info in updates:
+ValueError: too many values to unpack (expected 2)
+11:12:47,365 uvicorn.error INFO Shutting down
+11:12:47,466 uvicorn.error INFO Waiting for application shutdown.
+11:12:47,466 uvicorn.error INFO Application shutdown complete.
+11:12:47,466 uvicorn.error INFO Finished server process [6556]
+11:12:48,529 root INFO Logging Student mongodb queries & logic errors
+11:12:48,539 uvicorn.error INFO Started server process [6607]
+11:12:48,540 uvicorn.error INFO Waiting for application startup.
+11:12:48,540 uvicorn.error INFO Application startup complete.
+11:12:49,831 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\xc5\x8b\xe5\xba\x07\xeaA\xa8\x8a\x93\x97\xf3c\xcd\x0b\xf7', 4)}), ('$db', 'students_transfer')]) 
+11:12:49,832 root INFO Succeded command aggregate id 1957747793 completed in 1348 microseconds
+11:12:49,832 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\xc5\x8b\xe5\xba\x07\xeaA\xa8\x8a\x93\x97\xf3c\xcd\x0b\xf7', 4)}), ('$db', 'students_transfer')]) 
+11:12:49,834 root INFO Succeded command find id 424238335 completed in 1652 microseconds
+11:12:57,464 uvicorn.error INFO Shutting down
+11:12:57,565 uvicorn.error INFO Waiting for application shutdown.
+11:12:57,565 uvicorn.error INFO Application shutdown complete.
+11:12:57,565 uvicorn.error INFO Finished server process [6607]
+11:12:58,827 root INFO Logging Student mongodb queries & logic errors
+11:12:58,838 uvicorn.error INFO Started server process [6635]
+11:12:58,839 uvicorn.error INFO Waiting for application startup.
+11:12:58,840 uvicorn.error INFO Application startup complete.
+11:12:58,857 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x82K\r\x8f\x8a\x9eJ\xcf\xbb\x8b\xf1\xcf\xbf\x9c\x1fH', 4)}), ('$db', 'students_transfer')]) 
+11:12:58,860 root INFO Succeded command aggregate id 1957747793 completed in 2917 microseconds
+11:12:58,861 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x82K\r\x8f\x8a\x9eJ\xcf\xbb\x8b\xf1\xcf\xbf\x9c\x1fH', 4)}), ('$db', 'students_transfer')]) 
+11:12:58,863 root INFO Succeded command find id 424238335 completed in 2759 microseconds
+11:13:37,352 uvicorn.error INFO Shutting down
+11:13:37,453 uvicorn.error INFO Waiting for application shutdown.
+11:13:37,453 uvicorn.error INFO Application shutdown complete.
+11:13:37,454 uvicorn.error INFO Finished server process [6635]
+11:13:38,424 root INFO Logging Student mongodb queries & logic errors
+11:13:38,427 uvicorn.error INFO Started server process [6755]
+11:13:38,427 uvicorn.error INFO Waiting for application startup.
+11:13:38,428 uvicorn.error INFO Application startup complete.
+11:13:38,617 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'$\x1f\x97\xe4l\xf3F~\xaf+7T\xf9\xd5w\xba', 4)}), ('$db', 'students_transfer')]) 
+11:13:38,620 root INFO Succeded command aggregate id 1957747793 completed in 3167 microseconds
+11:13:38,621 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'$\x1f\x97\xe4l\xf3F~\xaf+7T\xf9\xd5w\xba', 4)}), ('$db', 'students_transfer')]) 
+11:13:38,623 root INFO Succeded command find id 424238335 completed in 2379 microseconds
+11:13:41,674 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'$\x1f\x97\xe4l\xf3F~\xaf+7T\xf9\xd5w\xba', 4)}), ('$db', 'students_transfer')]) 
+11:13:41,678 root INFO Succeded command aggregate id 719885386 completed in 4419 microseconds
+11:13:41,679 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'$\x1f\x97\xe4l\xf3F~\xaf+7T\xf9\xd5w\xba', 4)}), ('$db', 'students_transfer')]) 
+11:13:41,684 root INFO Succeded command find id 1649760492 completed in 4070 microseconds
+11:13:48,554 uvicorn.error INFO Shutting down
+11:13:48,655 uvicorn.error INFO Waiting for application shutdown.
+11:13:48,655 uvicorn.error INFO Application shutdown complete.
+11:13:48,656 uvicorn.error INFO Finished server process [6755]
+11:13:49,384 root INFO Logging Student mongodb queries & logic errors
+11:13:49,387 uvicorn.error INFO Started server process [6791]
+11:13:49,387 uvicorn.error INFO Waiting for application startup.
+11:13:49,387 uvicorn.error INFO Application startup complete.
+11:14:10,143 uvicorn.error INFO Shutting down
+11:14:10,244 uvicorn.error INFO Waiting for application shutdown.
+11:14:10,244 uvicorn.error INFO Application shutdown complete.
+11:14:10,245 uvicorn.error INFO Finished server process [6791]
+11:14:11,26 root INFO Logging Student mongodb queries & logic errors
+11:14:11,30 uvicorn.error INFO Started server process [6816]
+11:14:11,32 uvicorn.error INFO Waiting for application startup.
+11:14:11,34 uvicorn.error INFO Application startup complete.
+11:14:11,751 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:11,755 root INFO Succeded command aggregate id 1957747793 completed in 3863 microseconds
+11:14:11,755 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'QT'}}), ('multi', False), ('upsert', False)])])]) 
+11:14:11,757 root INFO Succeded command update id 424238335 completed in 2004 microseconds
+11:14:11,758 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:11,762 root INFO Succeded command find id 719885386 completed in 3892 microseconds
+11:14:12,407 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:12,412 root INFO Succeded command aggregate id 1649760492 completed in 5424 microseconds
+11:14:12,413 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'QT'}}), ('multi', False), ('upsert', False)])])]) 
+11:14:12,416 root INFO Succeded command update id 596516649 completed in 2644 microseconds
+11:14:12,417 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:12,422 root INFO Succeded command find id 1189641421 completed in 4204 microseconds
+11:14:29,915 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:29,918 root INFO Succeded command aggregate id 1350490027 completed in 2450 microseconds
+11:14:29,918 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'QT'}}), ('multi', False), ('upsert', False)])])]) 
+11:14:29,920 root INFO Succeded command update id 783368690 completed in 1459 microseconds
+11:14:29,920 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:29,922 root INFO Succeded command find id 1102520059 completed in 1641 microseconds
+11:14:29,922 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'last_name': 'Testing'}}), ('multi', False), ('upsert', False)])])]) 
+11:14:29,923 root INFO Succeded command update id 2044897763 completed in 655 microseconds
+11:14:29,923 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:29,924 root INFO Succeded command find id 1967513926 completed in 1208 microseconds
+11:14:32,429 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:32,436 root INFO Succeded command aggregate id 1540383426 completed in 6816 microseconds
+11:14:32,437 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'QT'}}), ('multi', False), ('upsert', False)])])]) 
+11:14:32,440 root INFO Succeded command update id 304089172 completed in 3599 microseconds
+11:14:32,442 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:32,447 root INFO Succeded command find id 1303455736 completed in 4884 microseconds
+11:14:32,448 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'last_name': 'Testing'}}), ('multi', False), ('upsert', False)])])]) 
+11:14:32,450 root INFO Succeded command update id 35005211 completed in 2000 microseconds
+11:14:32,450 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'\x1f\x91x:.hM\t\x95\xfa"\x8f\x94\x00\xf1\xd7', 4)}), ('$db', 'students_transfer')]) 
+11:14:32,456 root INFO Succeded command find id 521595368 completed in 4994 microseconds
+11:15:20,644 uvicorn.error INFO Shutting down
+11:15:20,745 uvicorn.error INFO Waiting for application shutdown.
+11:15:20,745 uvicorn.error INFO Application shutdown complete.
+11:15:20,745 uvicorn.error INFO Finished server process [6816]
+11:15:21,868 root INFO Logging Student mongodb queries & logic errors
+11:15:21,872 uvicorn.error INFO Started server process [6944]
+11:15:21,872 uvicorn.error INFO Waiting for application startup.
+11:15:21,873 uvicorn.error INFO Application startup complete.
+11:15:39,321 uvicorn.error INFO Shutting down
+11:15:39,422 uvicorn.error INFO Waiting for application shutdown.
+11:15:39,423 uvicorn.error INFO Application shutdown complete.
+11:15:39,423 uvicorn.error INFO Finished server process [6944]
+11:15:40,342 root INFO Logging Student mongodb queries & logic errors
+11:15:40,345 uvicorn.error INFO Started server process [6979]
+11:15:40,345 uvicorn.error INFO Waiting for application startup.
+11:15:40,346 uvicorn.error INFO Application startup complete.
+11:15:43,255 uvicorn.error INFO Shutting down
+11:15:43,355 uvicorn.error INFO Waiting for application shutdown.
+11:15:43,356 uvicorn.error INFO Application shutdown complete.
+11:15:43,356 uvicorn.error INFO Finished server process [6979]
+11:15:44,284 root INFO Logging Student mongodb queries & logic errors
+11:15:44,287 uvicorn.error INFO Started server process [6990]
+11:15:44,287 uvicorn.error INFO Waiting for application startup.
+11:15:44,288 uvicorn.error INFO Application startup complete.
+11:16:05,548 uvicorn.error INFO Shutting down
+11:16:05,649 uvicorn.error INFO Waiting for application shutdown.
+11:16:05,649 uvicorn.error INFO Application shutdown complete.
+11:16:05,649 uvicorn.error INFO Finished server process [6990]
+11:16:06,261 root INFO Logging Student mongodb queries & logic errors
+11:16:06,264 uvicorn.error INFO Started server process [7033]
+11:16:06,264 uvicorn.error INFO Waiting for application startup.
+11:16:06,265 uvicorn.error INFO Application startup complete.
+11:16:34,450 uvicorn.error INFO Shutting down
+11:16:34,550 uvicorn.error INFO Waiting for application shutdown.
+11:16:34,550 uvicorn.error INFO Application shutdown complete.
+11:16:34,551 uvicorn.error INFO Finished server process [7033]
+11:16:35,240 root INFO Logging Student mongodb queries & logic errors
+11:16:35,243 uvicorn.error INFO Started server process [7069]
+11:16:35,243 uvicorn.error INFO Waiting for application startup.
+11:16:35,244 uvicorn.error INFO Application startup complete.
+11:17:03,228 uvicorn.error INFO Shutting down
+11:17:03,329 uvicorn.error INFO Waiting for application shutdown.
+11:17:03,329 uvicorn.error INFO Application shutdown complete.
+11:17:03,329 uvicorn.error INFO Finished server process [7069]
+11:18:08,317 root INFO Logging Student mongodb queries & logic errors
+11:18:08,320 uvicorn.error INFO Started server process [7458]
+11:18:08,320 uvicorn.error INFO Waiting for application startup.
+11:18:08,321 uvicorn.error INFO Application startup complete.
+11:18:08,326 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer')]) 
+11:18:08,327 root INFO Succeded command aggregate id 1957747793 completed in 1310 microseconds
+11:18:08,327 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'QT'}}), ('multi', False), ('upsert', False)])])]) 
+11:18:08,328 root INFO Succeded command update id 424238335 completed in 658 microseconds
+11:18:08,328 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer')]) 
+11:18:08,329 root INFO Succeded command find id 719885386 completed in 1225 microseconds
+11:18:08,330 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'last_name': 'Testing'}}), ('multi', False), ('upsert', False)])])]) 
+11:18:08,330 root INFO Succeded command update id 1649760492 completed in 567 microseconds
+11:18:08,330 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer')]) 
+11:18:08,332 root INFO Succeded command find id 596516649 completed in 1239 microseconds
+11:18:14,894 root INFO Command ST aggregate **Details** SON([('aggregate', 'students_info'), ('pipeline', [{'$match': {'student_id': 2450}}, {'$group': {'_id': 1, 'n': {'$sum': 1}}}]), ('cursor', {}), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer')]) 
+11:18:14,898 root INFO Succeded command aggregate id 1189641421 completed in 3486 microseconds
+11:18:14,898 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'first_name': 'QT'}}), ('multi', False), ('upsert', False)])])]) 
+11:18:14,900 root INFO Succeded command update id 1025202362 completed in 1535 microseconds
+11:18:14,901 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer')]) 
+11:18:14,903 root INFO Succeded command find id 1350490027 completed in 2379 microseconds
+11:18:14,904 root INFO Command ST update **Details** SON([('update', 'students_info'), ('ordered', True), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer'), ('updates', [SON([('q', {'student_id': 2450}), ('u', {'$set': {'last_name': 'Testing'}}), ('multi', False), ('upsert', False)])])]) 
+11:18:14,905 root INFO Succeded command update id 783368690 completed in 965 microseconds
+11:18:14,906 root INFO Command ST find **Details** SON([('find', 'students_info'), ('filter', {'student_id': 2450}), ('projection', {'first_name': 1, 'last_name': 1, 'dob': 1, 'student_id': 1, '_id': 0}), ('lsid', {'id': Binary(b'v\x14\x022DkB\xf5\xb2\xf7\x93h\xe2|h\xc3', 4)}), ('$db', 'students_transfer')]) 
+11:18:14,908 root INFO Succeded command find id 1102520059 completed in 1901 microseconds
+11:18:50,838 uvicorn.error INFO Shutting down
+11:18:50,939 uvicorn.error INFO Waiting for application shutdown.
+11:18:50,939 uvicorn.error INFO Application shutdown complete.
+11:18:50,940 uvicorn.error INFO Finished server process [7458]
+11:18:51,799 root INFO Logging Student mongodb queries & logic errors
+11:18:51,802 uvicorn.error INFO Started server process [7565]
+11:18:51,802 uvicorn.error INFO Waiting for application startup.
+11:18:51,803 uvicorn.error INFO Application startup complete.
+11:20:12,812 uvicorn.error INFO Shutting down
+11:20:12,913 uvicorn.error INFO Waiting for application shutdown.
+11:20:12,913 uvicorn.error INFO Application shutdown complete.
+11:20:12,913 uvicorn.error INFO Finished server process [7565]
+11:20:13,912 root INFO Logging Student mongodb queries & logic errors
+11:20:13,915 uvicorn.error INFO Started server process [8084]
+11:20:13,915 uvicorn.error INFO Waiting for application startup.
+11:20:13,915 uvicorn.error INFO Application startup complete.

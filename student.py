@@ -1,7 +1,7 @@
 ##
 ## note: 
-## (1) transaction_log
-## (2) API post
+## (1) transaction_log (done)
+## (2) API post (done)
 
 
 import pandas as pd 
@@ -154,11 +154,14 @@ class Student():
 
 
 
-def edit_student_info(self, field_name, field_value_change):
-	pass
+def edit_student_info(field_name,edit_info,student_id):
+		query = { "student_id": student_id }
+		update_value = { "$set": { field_name: edit_info } }
+		student_info_db.update_one(query, update_value)
 
-def edit_classes_info(self, field_name, field_value_change):
-	pass
+		#print "customers" after the update:
+		for x in student_info_db.find(query,{'first_name':1,'last_name':1,'dob':1,'student_id':1, '_id':0}):
+			return (x)
 
 def student_exist_by_id(student_id):
 	""" check student db to see if student exists by student_id """
@@ -200,9 +203,9 @@ response = requests.post(api_url, json=todo)
 print (response.text)
 """
 
-""" start mongodb loggings & save to log.txt """
+""" start mongodb loggings & other logic errors & save to log.txt """
 logging.basicConfig(filename='log.txt', filemode='a', format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s', datefmt='%H:%M:%S', level=logging.DEBUG)
-logging.info("Logging Student mongodb queries")
+logging.info("Logging Student mongodb queries & logic errors")
 monitoring.register(CommandLogger())
 
 """ mongodb """
@@ -210,7 +213,6 @@ myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["students_transfer"]
 student_info_db = mydb["students_info"]
 student_grade_db = mydb["students_grade"]
-transaction_logs = mydb["transaction_logs"]
 #student_info_db.delete_many({})
 
 """ Fast API """
@@ -222,13 +224,28 @@ async def default():
 	return "import: <a href='./importcsv'>csv</a>, <a href='./importjson'>api</a>  | view: <a href='./view'>all</a> <a href='./view_id/1000'>by id</a> | <a href='./remove/1000'>remove</a>"
 
 @app.get("/edit/")
-def edit_student(rservice,rtype,field_name,new_info):
-	if (rservice == 'info'):
-		dbase = student_info_db
-	elif (rservice == 'classes'):
-		dbase = student_grade_db
-	else:
-		return ("Error request.")
+def edit_student(rservice,rtype,update_info,student_id):
+	""" edit student info """
+	#http://127.0.0.1:8000/edit/?rservice=student_info&rtype=edit&update_info={"first_name":"Love","last_name":"Birds"}&student_id=2450
+	
+	student_id = int(student_id)
+
+	# catch improper format
+	try:
+		updates = (json.loads(update_info.replace("'",'"')))
+		res = ""
+		if (rservice == 'student_info' and rtype == 'edit' and student_id > 0):
+			if (student_exist_by_id(student_id)):
+				for field_name, edit_info in updates.items():
+					if ( edit_info and field_name in ('first_name', 'last_name', 'dob', 'student_id', 'phone_number', 'school_name', 'transfer_date')):
+						res=edit_student_info(field_name,edit_info,student_id)
+		else:
+			return ("Error request. Improper format.")
+
+	except Exception as e:
+		return ("Improper format")
+
+	return res
 
 @app.get("/remove/{student_id}")
 def remove_student(student_id):
