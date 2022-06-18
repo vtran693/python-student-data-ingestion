@@ -195,13 +195,7 @@ def check_student_class_exist(student_id,class_name,class_term):
 
 
 
-"""
-# Test POST JSON
-todo = '{"first_name":"Mike_100_Json","last_name":"Vu_100_Json","dob":"02/05/02","student_id":4843,"phone_number":"703-333-3333","school_name":"Vcu","transfer_date":"09/01/22","classes":[{"class":"Biol 101","grade":"A","term":"Spring 2021","date":"03/15/21"},{"class":"Chem 101","grade":"A","term":"Spring 2021","date":"03/15/21"},{"class":"Hist 105","grade":"B","term":"Spring 2021","date":"03/15/21"},{"class":"Geol 101","grade":"B","term":"Spring 2021","date":"03/15/21"},{"class":"Biol 102","grade":"A","term":"Fall 2021","date":"07/15/21"},{"class":"Chem 102","grade":"A","term":"Fall 2021","date":"07/15/21"},{"class":"CS 211","grade":"A","term":"Fall 2021","date":"07/15/21"},{"class":"IT 101","grade":"A","term":"Fall 2021","date":"07/15/21"},{"class":"Chem 101","grade":"A","term":"Spring 2021","date":"03/15/21"}]}'
-api_url = 'http://127.0.0.1:8000/importjson?data='+todo
-response = requests.post(api_url, json=todo)
-print (response.text)
-"""
+
 
 """ start mongodb loggings & other logic errors & save to log.txt """
 logging.basicConfig(filename='log.txt', filemode='a', format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s', datefmt='%H:%M:%S', level=logging.DEBUG)
@@ -243,7 +237,8 @@ def edit_student(rservice,rtype,update_info,student_id):
 			return ("Error request. Improper format.")
 
 	except Exception as e:
-		return ("Improper format")
+		logging.info("Edit student => Improper input format: " + str(e))
+		return ("Improper format", e)
 
 	return res
 
