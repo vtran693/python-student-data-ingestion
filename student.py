@@ -13,15 +13,24 @@ from fastapi.responses import JSONResponse
 
 
 class CommandLogger(monitoring.CommandListener):
-    """ log mongo queries """
-    def started(self, event):
-        logging.info("Command ST {0.command_name} **Details** {0.command} ".format(event))
-    def succeeded(self, event):
-        logging.info("Succeded command {0.command_name} id {0.request_id} completed in {0.duration_micros} microseconds".format(event))
-    def failed(self, event):
-        logging.info("Failed command {0.command_name} id {0.request_id} completed in {0.duration_micros} microseconds".format(event))
+	""" log mongo queries """
+	def started(self, event):
+		msg = "Command ST {0.command_name} **Details** {0.command} ".format(event)
+		print ("\n",msg)
+		logging.info(msg)
+
+	def succeeded(self, event):
+		msg = "Succeded command {0.command_name} id {0.request_id} completed in {0.duration_micros} microseconds".format(event)
+		print ("\n",msg)
+		logging.info(msg)
+
+	def failed(self, event):
+		msg = "Failed command {0.command_name} id {0.request_id} completed in {0.duration_micros} microseconds".format(event)
+		print ("\n",msg)
+		logging.info(msg)
 
 class Student():
+	""" New student properties """
 
 	def __init__(self):
 		self.first_name = None
@@ -42,10 +51,8 @@ class Student():
 		elif (row[0] == 'phone_number'): self.phone_number = row[1].strip().title()
 		elif (row[0] == 'school_name'): self.school_name = row[1].strip().title()
 		elif (row[0] == 'transfer_date'): self.transfer_date = row[1].strip().title()
-		else:
-			print (f"")
 
-	def prprepare_student_classes(self, row):
+	def prepare_student_classes(self, row):
 		""" CSV: extract student classes from csv """
 		temp = dict()
 		temp['class'] = row[0]
@@ -65,7 +72,7 @@ class Student():
 			if (i < 7): self.prepare_student_info(current_record)
 
 			# pass in student classes
-			elif (i >= 9): self.prprepare_student_classes(current_record)
+			elif (i >= 9): self.prepare_student_classes(current_record)
 
 	def load_transcript_direct(self, records):
 		""" load transcript from JSON to student object """
@@ -93,6 +100,7 @@ class Student():
 			if (student_exist_by_name_dob(self.first_name, self.last_name, self.dob) > 0):
 				error_msg = f"Student {self.first_name, self.last_name} already exists. No import."
 				logging.info(error_msg)
+				print (error_msg)
 				return (error_msg)
 
 			else:				
@@ -144,6 +152,7 @@ class Student():
 				# critical error
 				error_msg = f"[red flag] Error. '{key}' is required."
 				logging.info(error_msg)
+				print (error_msg)
 				self.notes.append({0:error_msg})
 
 			elif (not val):
@@ -155,16 +164,20 @@ class Student():
 
 
 def edit_student_info(field_name,edit_info,student_id):
-		query = { "student_id": student_id }
-		update_value = { "$set": { field_name: edit_info } }
-		student_info_db.update_one(query, update_value)
+	""" edit / update student info """
 
-		#print "customers" after the update:
-		for x in student_info_db.find(query,{'first_name':1,'last_name':1,'dob':1,'student_id':1, '_id':0}):
-			return (x)
+	query = { "student_id": student_id }
+	update_value = { "$set": { field_name: edit_info } }
+	student_info_db.update_one(query, update_value)
+
+	#print "customers" after the update:
+	for x in student_info_db.find(query,{'first_name':1,'last_name':1,'dob':1,'student_id':1, '_id':0}):
+		return (x)
 
 def student_exist_by_id(student_id):
 	""" check student db to see if student exists by student_id """
+	""" Return True if exists """
+
 	return True if student_info_db.count_documents({"student_id":student_id}) > 0 else False
 
 def student_exist_by_name_dob(first_name, last_name, dob):
@@ -192,11 +205,6 @@ def check_student_class_exist(student_id,class_name,class_term):
 #print (student_grade_db.delete_many({'student_id':1027}).deleted_count)
 
 
-
-
-
-
-
 """ start mongodb loggings & other logic errors & save to log.txt """
 logging.basicConfig(filename='log.txt', filemode='a', format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s', datefmt='%H:%M:%S', level=logging.DEBUG)
 logging.info("Logging Student mongodb queries & logic errors")
@@ -215,11 +223,11 @@ app = FastAPI()
 @app.get("/",response_class=HTMLResponse)
 async def default():
 	""" default view """
-	return "import: <a href='./importcsv'>csv</a>, <a href='./importjson'>api</a>  | view: <a href='./view'>all</a> <a href='./view_id/1000'>by id</a> | <a href='./remove/1000'>remove</a>"
+	return "import: <a href='./importcsv_one'>csv - one </a>, <a href='./importcsv_multiple'>csv - multiple</a>, <a href='./importjson'>api</a>  | view: <a href='./view/?display=50&page=0'>all</a> <a href='./view_id/1000'>by id</a> | <a href='./remove/1000'>remove</a>"
 
 @app.get("/edit/")
 def edit_student(rservice,rtype,update_info,student_id):
-	""" edit student info """
+	""" edit student info ; update_info in JSON format """
 	#http://127.0.0.1:8000/edit/?rservice=student_info&rtype=edit&update_info={"first_name":"Love","last_name":"Birds"}&student_id=2450
 	
 	student_id = int(student_id)
@@ -238,6 +246,7 @@ def edit_student(rservice,rtype,update_info,student_id):
 
 	except Exception as e:
 		logging.info("Edit student => Improper input format: " + str(e))
+		print ("Edit student => Improper input format: " + str(e))
 		return ("Improper format", e)
 
 	return res
@@ -271,13 +280,15 @@ def remove_student(student_id):
 		return msg
 
 @app.get("/view")
-async def view_all_students():
+async def view_all_students(display, page):
 	""" View all students """
+
+	display, page = int(display), int(page)
 
 	students = []
 
 	#for row in student_info_db.find({},{'first_name':1,'last_name':1,'dob':1,'student_id':1, '_id':0}).limit(100):		
-	for row in student_info_db.find({},{'first_name':1,'last_name':1,'dob':1,'student_id':1, '_id':0}).sort([['student_id',pymongo.DESCENDING]]):		
+	for row in student_info_db.find({},{'first_name':1,'last_name':1,'dob':1,'student_id':1, '_id':0}).sort([['student_id',pymongo.DESCENDING]]).skip(page*display).limit(display):		
 		students.append(row)
 
 	return students
@@ -302,7 +313,7 @@ async def view_student_by_id(student_id):
 		return ("This student does not exist. Select a different student id number.")
 
 
-@app.get("/importcsv")
+@app.get("/importcsv_one")
 def import_student_csv():
 	""" read cvs & load into db """
 
@@ -312,6 +323,40 @@ def import_student_csv():
 	student = Student()
 	student.load_transcript_csv(record)
 	return student.import_transcript_db()
+
+@app.get("/importcsv_multiple")
+def import_student_csv():
+	""" read cvs & load into db """
+
+	import_status = []
+
+	transcript_url = "multiple_students.csv"
+	multiple_records = pd.read_csv(transcript_url)
+
+	for i in range(len(multiple_records)):
+
+		# create new dictionary 
+		record = {}
+
+		record['first_name'] = str(multiple_records.iloc[i]['first_name'])
+		record['last_name'] = str(multiple_records.iloc[i]['last_name'])
+		record['dob'] = str(multiple_records.iloc[i]['dob'])
+		record['student_id'] = "0"
+		record['phone_number'] = str(multiple_records.iloc[i]['phone_number'])
+		record['school_name'] = str(multiple_records.iloc[i]['school_name'])
+		record['transfer_date'] = str(multiple_records.iloc[i]['transfer_date'])
+
+		try:
+			record['classes'] = json.loads(str(multiple_records.iloc[i]['classes']))
+		except Exception as e:
+			print ("Classes import error.", e)
+			record['classes'] = ""
+	
+		student = Student()
+		student.load_transcript_direct(record)
+		import_status.append(student.import_transcript_db())
+
+	return import_status
 
 
 @app.post("/importjson")
